@@ -9,8 +9,8 @@ export default class NinjaIdle extends React.Component{
   render(){
     return(
       <div>
-        <StatBlock />
-        <TrainButton trainPoints={trainPoints}/>
+        <StatBlock trainPoints={this.state.trainPoints}/>
+        <TrainButton />
       </div>
     )
   }
@@ -24,6 +24,6 @@ const TrainButton = () => (
 
 const StatBlock = (props) => (
   <div>
-    <h1>Training Points: </h1>
+    <h1>Training Points: {props.trainPoints}</h1>
   </div>
 );
