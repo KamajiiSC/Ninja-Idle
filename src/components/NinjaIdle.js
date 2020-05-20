@@ -6,6 +6,11 @@ export default class NinjaIdle extends React.Component{
     trainPoints: 0
   }
 
+  handleAddTrainPoints = () => {
+    let newPoints = this.state.trainPoints++
+    this.setState(() => ({trainPoints: newPoints}));
+  };
+
   render(){
     return(
       <div>
