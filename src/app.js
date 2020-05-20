@@ -11,7 +11,7 @@ const TrainButton = () => (
 
 const NinjaIdle = () => (
   <div>
-    <p>test</p>
+    <TrainButton />
   </div>
 );
 
