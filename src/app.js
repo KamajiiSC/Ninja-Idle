@@ -9,6 +9,12 @@ const TrainButton = () => (
   </div>
 );
 
+const StatBlock = () => (
+  <div>
+    
+  </div>
+);
+
 const NinjaIdle = () => (
   <div>
     <TrainButton />
