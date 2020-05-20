@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class NinjaIdle extends React.Component{
+  state = {
+    trainPoints: 0
+  }
 
   render(){
     return(
