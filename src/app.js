@@ -4,12 +4,15 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const TrainButton = () => (
-  <button> </button>
+  <div>
+    <button> </button>
+  </div>
 );
 
 const NinjaIdle = () => (
-  <p>test</p>
-
+  <div>
+    <p>test</p>
+  </div>
 );
 
 ReactDOM.render(<NinjaIdle />, document.getElementById('app'));
