@@ -17,6 +17,7 @@ const StatBlock = () => (
 
 const NinjaIdle = () => (
   <div>
+    <StatBlock />
     <TrainButton />
   </div>
 );
