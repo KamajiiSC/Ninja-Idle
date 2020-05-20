@@ -5,7 +5,7 @@ import './styles/styles.scss';
 
 const TrainButton = () => (
   <div>
-    <button> </button>
+    <button>Train</button>
   </div>
 );
 
