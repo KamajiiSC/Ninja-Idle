@@ -11,7 +11,7 @@ const TrainButton = () => (
 
 const StatBlock = () => (
   <div>
-    <h1></h1>
+    <h1>Training Points: </h1>
   </div>
 );
 
