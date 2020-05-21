@@ -7,7 +7,8 @@ export default class NinjaIdle extends React.Component{
   }
 
   handleAddTrainPoints = () => {
-    let newPoints = this.state.trainPoints++
+    let newPoints = this.state.trainPoints + 1;
+    console.log(newPoints);
     this.setState(() => ({trainPoints: newPoints}));
   };
 
@@ -15,15 +16,15 @@ export default class NinjaIdle extends React.Component{
     return(
       <div>
         <StatBlock trainPoints={this.state.trainPoints}/>
-        <TrainButton />
+        <TrainButton handleAddTrainPoints={this.handleAddTrainPoints} />
       </div>
     )
   }
 };
 
-const TrainButton = () => (
+const TrainButton = (props) => (
   <div>
-    <button>Train</button>
+    <button onClick={props.handleAddTrainPoints}>Train</button>
   </div>
 );
 
