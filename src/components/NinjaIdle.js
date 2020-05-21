@@ -6,7 +6,8 @@ import MeditateButton from './MeditateButton';
 export default class NinjaIdle extends React.Component{
   state = {
     trainPoints: 0,
-    medPoints: 0
+    medPoints: 0,
+    health: 100
   }
 
   handleAddTrainPoints = () => {
