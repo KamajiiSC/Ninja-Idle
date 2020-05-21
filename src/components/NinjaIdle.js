@@ -4,7 +4,8 @@ import StatBlock from './StatBlock';
 
 export default class NinjaIdle extends React.Component{
   state = {
-    trainPoints: 0
+    trainPoints: 0,
+    medPoints: 0
   }
 
   handleAddTrainPoints = () => {
@@ -21,5 +22,5 @@ export default class NinjaIdle extends React.Component{
       </div>
     )
   }
-  
+
 };
