@@ -1,4 +1,5 @@
 import React from 'react';
+import TrainButton from './TrainButton';
 import ReactDOM from 'react-dom';
 
 export default class NinjaIdle extends React.Component{
@@ -21,12 +22,6 @@ export default class NinjaIdle extends React.Component{
     )
   }
 };
-
-const TrainButton = (props) => (
-  <div>
-    <button onClick={props.handleAddTrainPoints}>Train</button>
-  </div>
-);
 
 const StatBlock = (props) => (
   <div>
