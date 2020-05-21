@@ -24,9 +24,9 @@ export default class NinjaIdle extends React.Component{
   render(){
     return(
       <div>
-        <StatBlock trainPoints={this.state.trainPoints}/>
+        <StatBlock trainPoints={this.state.trainPoints} medPoints={this.state.medPoints}/>
         <TrainButton handleAddTrainPoints={this.handleAddTrainPoints} />
-        <MeditateButton />
+        <MeditateButton handleAddMedPoints={this.handleAddMedPoints}/>
       </div>
     )
   }
