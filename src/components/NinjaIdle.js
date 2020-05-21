@@ -1,6 +1,7 @@
 import React from 'react';
 import TrainButton from './TrainButton';
 import StatBlock from './StatBlock';
+import MeditateButton from './MeditateButton';
 
 export default class NinjaIdle extends React.Component{
   state = {
@@ -25,6 +26,7 @@ export default class NinjaIdle extends React.Component{
       <div>
         <StatBlock trainPoints={this.state.trainPoints}/>
         <TrainButton handleAddTrainPoints={this.handleAddTrainPoints} />
+        <MeditateButton />
       </div>
     )
   }
