@@ -14,6 +14,12 @@ export default class NinjaIdle extends React.Component{
     this.setState(() => ({trainPoints: newPoints}));
   };
 
+  handleAddMedPoints = () => {
+    let newPoints = this.state.medPoints + 1;
+    console.log(newPoints);
+    this.setState(() => ({medPoints: newPoints}));
+  };
+  
   render(){
     return(
       <div>
