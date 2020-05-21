@@ -4,7 +4,7 @@ const StatBlock = (props) => (
   <div>
     <h1>Training Points: {props.trainPoints}</h1>
     <h1>Mentality Points: {props.medPoints}</h1>
-    <h1>Health: </h1>
+    <h1>Health: {props.health}</h1>
   </div>
 );
 
